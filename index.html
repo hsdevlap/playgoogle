@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Profile | Google Play</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="font-bold text-xl text-blue-600">DevName</div>
+            <div class="space-x-6 text-sm font-medium">
+                <a href="#apps" class="hover:text-blue-600">Apps</a>
+                <a href="#about" class="hover:text-blue-600">About</a>
+                <a href="#contact" class="hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-white border-b">
+        <div class="max-w-5xl mx-auto px-4 py-16 text-center">
+            <div class="w-24 h-24 bg-blue-100 rounded-2xl mx-auto mb-6 flex items-center justify-center">
+                <i class="fas fa-code text-4xl text-blue-600"></i>
+            </div>
+            <h1 class="text-4xl font-extrabold mb-4">안녕하세요, [개발자 이름]입니다.</h1>
+            <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+                사용자의 일상을 더 편리하게 만드는 혁신적인 안드로이드 앱을 개발하고 있습니다. 
+                Google Play에서 제공하는 저의 앱들을 확인해 보세요.
+            </p>
+        </div>
+    </header>
+
+    <main id="apps" class="max-w-5xl mx-auto px-4 py-16">
+        <h2 class="text-2xl font-bold mb-10 flex items-center">
+            <i class="fab fa-google-play mr-3 text-green-500"></i> My Apps
+        </h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border hover:shadow-md transition-shadow">
+                <div class="flex items-start">
+                    <div class="w-16 h-16 bg-gray-200 rounded-xl mr-4 overflow-hidden">
+                        <div class="w-full h-full flex items-center justify-center bg-indigo-500 text-white font-bold text-xl">A1</div>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-bold text-lg">앱 이름 1</h3>
+                        <p class="text-sm text-gray-500 mb-4">도구 및 유틸리티 | ★ 4.8</p>
+                        <p class="text-gray-600 text-sm mb-6">앱에 대한 간단한 설명을 여기에 적으세요. 어떤 문제를 해결하는 앱인가요?</p>
+                        <a href="#" class="inline-block bg-black text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-800">
+                            Play Store에서 보기
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-sm border hover:shadow-md transition-shadow">
+                <div class="flex items-start">
+                    <div class="w-16 h-16 bg-gray-200 rounded-xl mr-4 overflow-hidden">
+                        <div class="w-full h-full flex items-center justify-center bg-emerald-500 text-white font-bold text-xl">A2</div>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-bold text-lg">앱 이름 2</h3>
+                        <p class="text-sm text-gray-500 mb-4">라이프스타일 | ★ 4.5</p>
+                        <p class="text-gray-600 text-sm mb-6">사용자들에게 가치를 제공하는 두 번째 앱의 핵심 기능을 소개합니다.</p>
+                        <a href="#" class="inline-block bg-black text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-800">
+                            Play Store에서 보기
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section id="about" class="bg-gray-100 py-16">
+        <div class="max-w-5xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+            <div class="md:col-span-2">
+                <h2 class="text-2xl font-bold mb-4">About Me</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    저는 사용자 중심의 설계를 중요하게 생각하는 독립 개발자입니다. 
+                    클린 코드와 안정적인 성능을 바탕으로 최상의 사용자 경험을 제공하고자 노력합니다.
+                </p>
+                <div class="flex space-x-4 mt-6">
+                    <a href="#" class="text-gray-500 hover:text-blue-600 transition-colors"><i class="fab fa-github text-2xl"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-blue-400 transition-colors"><i class="fab fa-twitter text-2xl"></i></a>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-xl border">
+                <h3 class="font-bold mb-3">Legal & Support</h3>
+                <ul class="text-sm space-y-3 text-gray-600">
+                    <li><a href="#" class="hover:underline">Privacy Policy (개인정보처리방침)</a></li>
+                    <li><a href="#" class="hover:underline">Terms of Service (이용약관)</a></li>
+                    <li><a href="mailto:support@email.com" class="hover:underline text-blue-600">Support Email</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-gray-400 text-sm">
+        <p>&copy; 2024 [개발자명]. All rights reserved.</p>
+        <p class="mt-2 text-xs">Google Play 및 Google Play 로고는 Google LLC의 상표입니다.</p>
+    </footer>
+
+</body>
+</html>
